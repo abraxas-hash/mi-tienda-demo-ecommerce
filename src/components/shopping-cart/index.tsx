@@ -31,11 +31,11 @@ const ShoppingCart = () => {
             <table>
               <tbody>
                 <tr>
-                  <th style={{ textAlign: "left" }}>Product</th>
+                  <th style={{ textAlign: "left" }}>Producto</th>
                   <th>Color</th>
-                  <th>Size</th>
-                  <th>Ammount</th>
-                  <th>Price</th>
+                  <th>Talla</th>
+                  <th>Cantidad</th>
+                  <th>Precio</th>
                   <th />
                 </tr>
 
