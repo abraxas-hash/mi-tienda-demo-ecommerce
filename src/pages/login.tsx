@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import Layout from "../layouts/Main";
 import { server } from "../utils/server";
 import { postData } from "../utils/services";
+import { useRouter } from "next/router";
 
 type LoginMail = {
   email: string;
@@ -11,13 +12,12 @@ type LoginMail = {
 };
 
 const LoginPage = () => {
+  const router = useRouter();
   const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = async (data: LoginMail) => {
-    await postData(`${server}/api/login`, {
-      email: data.email,
-      password: data.password,
-    });
+    // Simular un inicio de sesión exitoso y redirigir al perfil
+    router.push("/profile");
   };
 
   return (
