@@ -4,7 +4,7 @@ Bienvenido a la demostración de **Tienda Virtual Premium**. Este proyecto es un
 
 Actualmente, el diseño de prueba está ambientado en la marca ficticia *"Inka Moda"*, pero **la plataforma está lista para ser 100% personalizada y adaptada a la identidad visual, colores, productos y necesidades específicas de tu empresa.**
 
-🔗 **[Ver Demo en Vivo](https://tu-url-de-vercel-aqui)** *(Nota: Reemplazar con el link de Vercel cuando compartas esto)*
+🔗 **[Ver Demo en Vivo]((https://mi-tienda-demo-ecommerce.vercel.app/))** *(Nota: Reemplazar con el link de Vercel cuando compartas esto)*
 
 ---
 
