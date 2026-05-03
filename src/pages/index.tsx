@@ -17,9 +17,9 @@ const IndexPage = () => {
             className="featured-item featured-item-large"
           >
             <div className="featured-item__content">
-              <h3>New arrivals are now in!</h3>
+              <h3>¡Nuevas colecciones disponibles!</h3>
               <a href="#" className="btn btn--rounded">
-                Show Collection
+                Ver Colección
               </a>
             </div>
           </article>
@@ -29,9 +29,9 @@ const IndexPage = () => {
             className="featured-item featured-item-small-first"
           >
             <div className="featured-item__content">
-              <h3>Basic t-shirts $29,99</h3>
+              <h3>Polos de algodón pima desde S/ 89.90</h3>
               <a href="#" className="btn btn--rounded">
-                More details
+                Ver detalles
               </a>
             </div>
           </article>
@@ -41,9 +41,9 @@ const IndexPage = () => {
             className="featured-item featured-item-small"
           >
             <div className="featured-item__content">
-              <h3>Sale this summer</h3>
+              <h3>Ofertas de temporada</h3>
               <a href="#" className="btn btn--rounded">
-                VIEW ALL
+                VER TODO
               </a>
             </div>
           </article>
@@ -53,17 +53,17 @@ const IndexPage = () => {
       <section className="section">
         <div className="container">
           <header className="section__intro">
-            <h4>Why should you choose us?</h4>
+            <h4>¿Por qué elegirnos?</h4>
           </header>
 
           <ul className="shop-data-items">
             <li>
               <i className="icon-shipping" />
               <div className="data-item__content">
-                <h4>Free Shipping</h4>
+                <h4>Envío Gratis</h4>
                 <p>
-                  All purchases over $199 are eligible for free shipping via
-                  USPS First Class Mail.
+                  Todas las compras mayores a S/ 200 tienen envío gratuito
+                  a cualquier parte del Perú.
                 </p>
               </div>
             </li>
@@ -71,10 +71,10 @@ const IndexPage = () => {
             <li>
               <i className="icon-payment" />
               <div className="data-item__content">
-                <h4>Easy Payments</h4>
+                <h4>Pagos Seguros</h4>
                 <p>
-                  All payments are processed instantly over a secure payment
-                  protocol.
+                  Aceptamos Yape, Plin, tarjetas de crédito y débito a través
+                  de una pasarela de pago segura.
                 </p>
               </div>
             </li>
@@ -82,10 +82,10 @@ const IndexPage = () => {
             <li>
               <i className="icon-cash" />
               <div className="data-item__content">
-                <h4>Money-Back Guarantee</h4>
+                <h4>Garantía de Devolución</h4>
                 <p>
-                  If an item arrived damaged or you've changed your mind, you
-                  can send it back for a full refund.
+                  Si el producto llegó dañado o no te convenció, tienes
+                  15 días para solicitar el cambio o reembolso.
                 </p>
               </div>
             </li>
@@ -93,10 +93,10 @@ const IndexPage = () => {
             <li>
               <i className="icon-materials" />
               <div className="data-item__content">
-                <h4>Finest Quality</h4>
+                <h4>Calidad Premium</h4>
                 <p>
-                  Designed to last, each of our products has been crafted with
-                  the finest materials.
+                  Cada prenda está confeccionada con algodón pima y fibra
+                  de alpaca 100% peruanos, de exportación mundial.
                 </p>
               </div>
             </li>
