@@ -169,8 +169,8 @@ const CheckoutPage = () => {
                 <CheckoutItems />
 
                 <div className="checkout-total">
-                  <p>Total cost</p>
-                  <h3>${priceTotal}</h3>
+                  <p>Costo Total</p>
+                  <h3>S/{priceTotal}</h3>
                 </div>
               </div>
             </div>
