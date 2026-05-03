@@ -1,4 +1,5 @@
 import useSwr from "swr";
+import { useRouter } from "next/router";
 
 import type { ProductTypeList } from "@/types";
 
@@ -6,8 +7,14 @@ import ProductItem from "../../product-item";
 import ProductsLoading from "./loading";
 
 const ProductsContent = () => {
+  const router = useRouter();
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
-  const { data, error } = useSwr("/api/products", fetcher);
+  
+  const queryPath = router.asPath.includes("?") 
+    ? router.asPath.substring(router.asPath.indexOf("?")) 
+    : "";
+    
+  const { data, error } = useSwr(`/api/products${queryPath}`, fetcher);
 
   if (error) return <div>Error al cargar los productos</div>;
   return (

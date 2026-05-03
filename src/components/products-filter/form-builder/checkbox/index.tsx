@@ -15,6 +15,7 @@ const Checkbox = ({ type = "", label, name, onChange }: CheckboxType) => (
       onChange={onChange}
       type="checkbox"
       id={`${label}-${name}`}
+      value={label}
     />
     <span className="checkbox__check" />
     <p>{label}</p>

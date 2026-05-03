@@ -1,5 +1,6 @@
 import Slider from "rc-slider";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 import productsColors from "../../utils/data/products-colors";
 import productsSizes from "../../utils/data/products-sizes";
@@ -12,14 +13,28 @@ const { createSliderWithTooltip } = Slider;
 const Range = createSliderWithTooltip(Slider.Range);
 
 const ProductsFilter = () => {
+  const router = useRouter();
   const [filtersOpen, setFiltersOpen] = useState(false);
 
-  const addQueryParams = () => {
-    // query params changes
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const params = new URLSearchParams();
+    
+    const categories = formData.getAll("product-type");
+    if (categories.length > 0) params.set("category", categories.join(","));
+    
+    const sizes = formData.getAll("product-size");
+    if (sizes.length > 0) params.set("size", sizes.join(","));
+    
+    const colors = formData.getAll("product-color");
+    if (colors.length > 0) params.set("color", colors.join(","));
+    
+    router.push(`/products?${params.toString()}`, undefined, { shallow: true });
   };
 
   return (
-    <form className="products-filter" onChange={addQueryParams}>
+    <form className="products-filter" onSubmit={onSubmit}>
       <button
         type="button"
         onClick={() => setFiltersOpen(!filtersOpen)}
