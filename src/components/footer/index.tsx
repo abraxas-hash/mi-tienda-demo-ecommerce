@@ -50,7 +50,7 @@ const Footer = () => {
 
       <div className="site-footer__bottom">
         <div className="container">
-          <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+          <p>© 2026 Inka Moda. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
