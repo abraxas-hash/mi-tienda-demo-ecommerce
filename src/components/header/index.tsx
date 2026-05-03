@@ -107,15 +107,12 @@ const Header = ({ isErrorPage }: HeaderType) => {
               )}
             </button>
           </Link>
-          <Link href="/profile" legacyBehavior>
-            <button className="site-header__btn-avatar" style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'transparent', border: 'none', cursor: 'pointer', padding: 0 }}>
-              <img 
-                src={user.avatar} 
-                alt={user.name} 
-                style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #fff', boxShadow: '0 2px 5px rgba(0,0,0,0.1)' }} 
-              />
-            </button>
-          </Link>
+          <div className="site-header__btn-avatar" style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'default' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '32px', height: '32px', backgroundColor: '#f5f5f5', borderRadius: '50%' }}>
+              <i className="icon-avatar" style={{ fontSize: '16px', color: '#333' }} />
+            </div>
+            <span style={{ fontSize: '14px', fontWeight: 600, color: '#333' }} className="d-none d-lg-block">{user.name}</span>
+          </div>
           <button
             onClick={() => setMenuOpen(true)}
             className="site-header__btn-menu"
