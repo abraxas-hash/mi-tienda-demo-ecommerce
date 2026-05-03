@@ -728,6 +728,10 @@ h1,h2,h3,h4,h5 {
     background-size: cover;
     padding: 21px 22px;
     position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    
     @include breakpoint(phone) {
       height: 375px;
       padding: 55px 46px;
@@ -735,6 +739,23 @@ h1,h2,h3,h4,h5 {
     }
     @include breakpoint(tablet-lg) {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 22px 45px rgba(0,0,0,0.3);
+      z-index: 10;
+      
+      .btn {
+        background-color: var(--color-orange);
+        color: #fff;
+        border-color: var(--color-orange);
+        transform: scale(1.05);
+      }
+    }
+
+    .btn {
+      transition: all 0.3s ease;
     }
     &:before {
       content: '';
