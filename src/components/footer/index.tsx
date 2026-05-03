@@ -7,86 +7,42 @@ const Footer = () => {
         <div className="site-footer__top">
           <div className="site-footer__description">
             <h6>
-              <Logo /> <span>E</span>-Shop
+              <Logo /> <span>Inka</span> Moda
             </h6>
             <p>
-              House My Brand designs clothing for the young, the old & everyone
-              in between – but most importantly, for the fashionable
+              Inka Moda diseña prendas de alta calidad utilizando el mejor algodón 
+              y fibras peruanas para el mundo. Moda sostenible y elegante.
             </p>
             <ul className="site-footer__social-networks">
               <li>
-                <a href="#">
-                  <i className="icon-facebook" />
-                </a>
+                <a href="#"><i className="icon-facebook" /></a>
               </li>
               <li>
-                <a href="#">
-                  <i className="icon-twitter" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="icon-linkedin" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="icon-instagram" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="icon-youtube-play" />
-                </a>
+                <a href="#"><i className="icon-instagram" /></a>
               </li>
             </ul>
           </div>
 
           <div className="site-footer__links">
             <ul>
-              <li>Shopping online</li>
-              <li>
-                <a href="#">Order Status</a>
-              </li>
-              <li>
-                <a href="#">Shipping and Delivery</a>
-              </li>
-              <li>
-                <a href="#">Returns</a>
-              </li>
-              <li>
-                <a href="#">Payment options</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
+              <li>Compras Online</li>
+              <li><a href="#">Estado del pedido</a></li>
+              <li><a href="#">Envío y Entrega</a></li>
+              <li><a href="#">Devoluciones</a></li>
+              <li><a href="#">Opciones de pago</a></li>
+              <li><a href="#">Contáctanos</a></li>
             </ul>
             <ul>
-              <li>Information</li>
-              <li>
-                <a href="#">Gift Cards</a>
-              </li>
-              <li>
-                <a href="#">Find a store</a>
-              </li>
-              <li>
-                <a href="#">Newsletter</a>
-              </li>
-              <li>
-                <a href="#">Bacome a member</a>
-              </li>
-              <li>
-                <a href="#">Site feedback</a>
-              </li>
+              <li>Información</li>
+              <li><a href="#">Tarjetas de Regalo</a></li>
+              <li><a href="#">Buscar Tienda</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Hazte Miembro</a></li>
             </ul>
             <ul>
-              <li>Contact</li>
-              <li>
-                <a href="#">store@uikit.com</a>
-              </li>
-              <li>
-                <a href="#">Hotline: +1 131 138 138</a>
-              </li>
+              <li>Contacto</li>
+              <li><a href="#">contacto@inkamoda.pe</a></li>
+              <li><a href="#">Teléfono: +51 987 654 321</a></li>
             </ul>
           </div>
         </div>

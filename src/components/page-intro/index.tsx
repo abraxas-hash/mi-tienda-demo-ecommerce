@@ -14,10 +14,10 @@ const PageIntro = () => {
           >
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Sale of the summer collection</h2>
+                <h2>Lo mejor del Algodón Peruano</h2>
                 <a href="#" className="btn-shop">
                   <i className="icon-right" />
-                  Shop now
+                  Comprar ahora
                 </a>
               </div>
             </div>
@@ -31,10 +31,10 @@ const PageIntro = () => {
           >
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Make your house into a home</h2>
+                <h2>Colección Invierno: Fibra de Alpaca</h2>
                 <a href="#" className="btn-shop">
                   <i className="icon-right" />
-                  Shop now
+                  Ver colección
                 </a>
               </div>
             </div>
@@ -48,7 +48,7 @@ const PageIntro = () => {
             <li>
               <i className="icon-shipping" />
               <div className="data-item__content">
-                <h4>Free Shipping</h4>
+                <h4>Envío Gratis</h4>
                 <p>En compras mayores a S/ 200</p>
               </div>
             </li>
@@ -56,16 +56,16 @@ const PageIntro = () => {
             <li>
               <i className="icon-shipping" />
               <div className="data-item__content">
-                <h4>99% Satisfied Customers</h4>
-                <p>Our clients' opinions speak for themselves</p>
+                <h4>99% Clientes Satisfechos</h4>
+                <p>La opinión de nuestros clientes nos respalda</p>
               </div>
             </li>
 
             <li>
               <i className="icon-cash" />
               <div className="data-item__content">
-                <h4>Originality Guaranteed</h4>
-                <p>30 days warranty for each product from our store</p>
+                <h4>Calidad Garantizada</h4>
+                <p>Garantía de originalidad en cada prenda</p>
               </div>
             </li>
           </ul>
