@@ -62,11 +62,11 @@ const Content = ({ product }: ProductContent) => {
     <section className="product-content">
       <div className="product-content__intro">
         <h5 className="product__id">
-          Product ID:
+          ID Producto:
           <br />
           {product.id}
         </h5>
-        <span className="product-on-sale">Sale</span>
+        <span className="product-on-sale">OFERTA</span>
         <h2 className="product__name">{product.name}</h2>
 
         <div className="product__prices">
@@ -93,12 +93,12 @@ const Content = ({ product }: ProductContent) => {
         </div>
         <div className="product-filter-item">
           <h5>
-            Size: <strong>See size table</strong>
+            Talla: <strong>Ver tabla de medidas</strong>
           </h5>
           <div className="checkbox-color-wrapper">
             <div className="select-wrapper">
               <select onChange={onSelectChange}>
-                <option>Choose size</option>
+                <option>Elige tu talla</option>
                 {productsSizes.map((type) => (
                   <option key={type.id} value={type.label}>
                     {type.label}
@@ -109,7 +109,7 @@ const Content = ({ product }: ProductContent) => {
           </div>
         </div>
         <div className="product-filter-item">
-          <h5>Quantity:</h5>
+          <h5>Cantidad:</h5>
           <div className="quantity-buttons">
             <div className="quantity-button">
               <button

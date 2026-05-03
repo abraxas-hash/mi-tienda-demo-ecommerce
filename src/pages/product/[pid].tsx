@@ -51,14 +51,14 @@ const Product = ({ product }: ProductPageType) => {
                 onClick={() => setShowBlock("description")}
                 className={`btn btn--rounded ${showBlock === "description" ? "btn--active" : ""}`}
               >
-                Description
+                Descripción
               </button>
               <button
                 type="button"
                 onClick={() => setShowBlock("reviews")}
                 className={`btn btn--rounded ${showBlock === "reviews" ? "btn--active" : ""}`}
               >
-                Reviews (2)
+                Reseñas (2)
               </button>
             </div>
 
