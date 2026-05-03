@@ -49,7 +49,7 @@ const PageIntro = () => {
               <i className="icon-shipping" />
               <div className="data-item__content">
                 <h4>Free Shipping</h4>
-                <p>On purchases over $199</p>
+                <p>En compras mayores a S/ 200</p>
               </div>
             </li>
 
