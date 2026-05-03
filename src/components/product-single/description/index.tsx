@@ -11,22 +11,22 @@ const Description = ({ show }: ProductDescriptionType) => {
     <section style={style} className="product-single__description">
       <div className="product-description-block">
         <i className="icon-cart" />
-        <h4>Details and product description</h4>
+        <h4>Detalles y descripción del producto</h4>
         <p>
-          White Summer Vibes T-shirt in the uiKit line with a colorful print.{" "}
+          Prenda de alta calidad elaborada con fibras naturales peruanas.{" "}
           <br />
-          Made of jersey cotton. T-shirt fits perfectly with jeans, pants or
-          shorts.
+          Confeccionada con algodón pima de exportación. Combina perfectamente
+          con jeans, pantalones o shorts.
         </p>
       </div>
       <div className="product-description-block">
         <i className="icon-cart" />
-        <h4>Details and product description</h4>
+        <h4>Cuidado y mantenimiento</h4>
         <p>
-          White Summer Vibes T-shirt in the uiKit line with a colorful print.{" "}
+          Lavar a máquina en ciclo delicado con agua fría.{" "}
           <br />
-          Made of jersey cotton. T-shirt fits perfectly with jeans, pants or
-          shorts.
+          No usar blanqueador. Secar en tendedero a la sombra para preservar
+          los colores y la suavidad de la tela.
         </p>
       </div>
     </section>

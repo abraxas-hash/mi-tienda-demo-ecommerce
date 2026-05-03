@@ -55,7 +55,7 @@ const ShoppingCart = () => {
             </table>
           )}
 
-          {cartItems.length === 0 && <p>Nothing in the cart</p>}
+          {cartItems.length === 0 && <p>Tu carrito está vacío</p>}
         </div>
 
         <div className="cart-actions">

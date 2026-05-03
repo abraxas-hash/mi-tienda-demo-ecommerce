@@ -134,7 +134,7 @@ const Content = ({ product }: ProductContent) => {
               onClick={() => addToCart()}
               className="btn btn--rounded btn--yellow"
             >
-              Add to cart
+              Añadir al carrito
             </button>
             <button
               type="button"

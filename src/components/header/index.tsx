@@ -73,7 +73,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
           <a href="#">Hombre</a>
           <a href="#">Mujer</a>
           <button className="site-nav__btn">
-            <p>Account</p>
+            <p>Mi Cuenta</p>
           </button>
         </nav>
 
@@ -90,7 +90,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
               <input
                 type="text"
                 name="search"
-                placeholder="Enter the product you are looking for"
+                placeholder="Busca tu prenda favorita..."
               />
             </form>
             <i
