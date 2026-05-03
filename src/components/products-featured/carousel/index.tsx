@@ -1,5 +1,7 @@
-// import Swiper core and required components
+import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+SwiperCore.use([Autoplay]);
 
 import type { ProductTypeList } from "@/types";
 
@@ -37,6 +39,11 @@ const ProductsCarousel = ({ products }: ProductsCarouselType) => {
         watchOverflow
         slidesPerView={slidesPerView}
         className="swiper-wrapper"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
       >
         {products.map((item) => (
           <SwiperSlide key={item.id}>
