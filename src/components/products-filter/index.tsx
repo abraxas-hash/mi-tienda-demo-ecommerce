@@ -25,14 +25,14 @@ const ProductsFilter = () => {
         onClick={() => setFiltersOpen(!filtersOpen)}
         className={`products-filter__menu-btn ${filtersOpen ? "products-filter__menu-btn--active" : ""}`}
       >
-        Add Filter <i className="icon-down-open" />
+        Agregar Filtro <i className="icon-down-open" />
       </button>
 
       <div
         className={`products-filter__wrapper ${filtersOpen ? "products-filter__wrapper--open" : ""}`}
       >
         <div className="products-filter__block">
-          <button type="button">Product type</button>
+          <button type="button">Tipo de prenda</button>
           <div className="products-filter__block__content">
             {productsTypes.map((type) => (
               <Checkbox key={type.id} name="product-type" label={type.name} />
@@ -41,7 +41,7 @@ const ProductsFilter = () => {
         </div>
 
         <div className="products-filter__block">
-          <button type="button">Price</button>
+          <button type="button">Precio</button>
           <div className="products-filter__block__content">
             <Range
               min={0}
@@ -53,7 +53,7 @@ const ProductsFilter = () => {
         </div>
 
         <div className="products-filter__block">
-          <button type="button">Size</button>
+          <button type="button">Talla</button>
           <div className="products-filter__block__content checkbox-square-wrapper">
             {productsSizes.map((type) => (
               <Checkbox
@@ -86,7 +86,7 @@ const ProductsFilter = () => {
           type="submit"
           className="btn btn-submit btn--rounded btn--yellow"
         >
-          Apply
+          Aplicar
         </button>
       </div>
     </form>

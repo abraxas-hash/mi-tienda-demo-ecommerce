@@ -9,25 +9,24 @@ const RegisterPage = () => (
         <div className="back-button-section">
           <Link href="/products">
             <i className="icon-left" />
-            Back to store
+            Volver a la tienda
           </Link>
         </div>
 
         <div className="form-block">
           <h2 className="form-block__title">
-            Create an account and discover the benefits
+            Crea una cuenta y descubre los beneficios
           </h2>
           <p className="form-block__description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s
+            Únete a Inka Moda y accede a descuentos exclusivos, un proceso de pago
+            más rápido y seguimiento de todos tus pedidos.
           </p>
 
           <form className="form">
             <div className="form__input-row">
               <input
                 className="form__input"
-                placeholder="First Name"
+                placeholder="Nombre"
                 type="text"
               />
             </div>
@@ -35,20 +34,20 @@ const RegisterPage = () => (
             <div className="form__input-row">
               <input
                 className="form__input"
-                placeholder="Last Name"
+                placeholder="Apellido"
                 type="text"
               />
             </div>
 
             <div className="form__input-row">
-              <input className="form__input" placeholder="Email" type="text" />
+              <input className="form__input" placeholder="Correo electrónico" type="text" />
             </div>
 
             <div className="form__input-row">
               <input
                 className="form__input"
                 type="Password"
-                placeholder="Password"
+                placeholder="Contraseña"
               />
             </div>
 
@@ -65,7 +64,7 @@ const RegisterPage = () => (
                   />
                   <span className="checkbox__check" />
                   <p>
-                    I agree to the Google Terms of Service and Privacy Policy
+                    Acepto los Términos de Servicio y la Política de Privacidad
                   </p>
                 </label>
               </div>
@@ -75,11 +74,11 @@ const RegisterPage = () => (
               type="button"
               className="btn btn--rounded btn--yellow btn-submit"
             >
-              Sign up
+              Registrarse
             </button>
 
             <p className="form__signup-link">
-              <Link href="/login">Are you already a member?</Link>
+              <Link href="/login">¿Ya eres miembro?</Link>
             </p>
           </form>
         </div>

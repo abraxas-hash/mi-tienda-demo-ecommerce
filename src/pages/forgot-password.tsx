@@ -25,21 +25,21 @@ const ForgotPassword = () => {
           <div className="back-button-section">
             <Link href="/products">
               <i className="icon-left" />
-              Back to shop
+              Volver a la tienda
             </Link>
           </div>
 
           <div className="form-block">
-            <h2 className="form-block__title">Forgot your password?</h2>
+            <h2 className="form-block__title">¿Olvidaste tu contraseña?</h2>
             <p className="form-block__description">
-              Enter your email or phone number and recover your account
+              Ingresa tu correo electrónico y recupera tu cuenta
             </p>
 
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
               <div className="form__input-row">
                 <input
                   className="form__input"
-                  placeholder="email"
+                  placeholder="Correo electrónico"
                   type="text"
                   name="email"
                   ref={register({
@@ -51,13 +51,13 @@ const ForgotPassword = () => {
 
                 {errors.email && errors.email.type === "required" && (
                   <p className="message message--error">
-                    This field is required
+                    Este campo es obligatorio
                   </p>
                 )}
 
                 {errors.email && errors.email.type === "pattern" && (
                   <p className="message message--error">
-                    Please write a valid email
+                    Por favor escribe un correo válido
                   </p>
                 )}
               </div>
@@ -66,13 +66,13 @@ const ForgotPassword = () => {
                 <input
                   className="form__input"
                   type="password"
-                  placeholder="Password"
+                  placeholder="Contraseña"
                   name="password"
                   ref={register({ required: true })}
                 />
                 {errors.password && errors.password.type === "required" && (
                   <p className="message message--error">
-                    This field is required
+                    Este campo es obligatorio
                   </p>
                 )}
               </div>
@@ -81,7 +81,7 @@ const ForgotPassword = () => {
                 type="submit"
                 className="btn btn--rounded btn--yellow btn-submit"
               >
-                Reset password
+                Restablecer contraseña
               </button>
             </form>
           </div>

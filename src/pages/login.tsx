@@ -27,23 +27,22 @@ const LoginPage = () => {
           <div className="back-button-section">
             <Link href="/products">
               <i className="icon-left" />
-              Back to store
+              Volver a la tienda
             </Link>
           </div>
 
           <div className="form-block">
-            <h2 className="form-block__title">Log in</h2>
+            <h2 className="form-block__title">Iniciar sesión</h2>
             <p className="form-block__description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
+              Accede a tu cuenta para ver tus pedidos, gestionar tus datos
+              y disfrutar de ofertas exclusivas para miembros.
             </p>
 
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
               <div className="form__input-row">
                 <input
                   className="form__input"
-                  placeholder="email"
+                  placeholder="Correo electrónico"
                   type="text"
                   name="email"
                   ref={register({
@@ -55,13 +54,13 @@ const LoginPage = () => {
 
                 {errors.email && errors.email.type === "required" && (
                   <p className="message message--error">
-                    This field is required
+                    Este campo es obligatorio
                   </p>
                 )}
 
                 {errors.email && errors.email.type === "pattern" && (
                   <p className="message message--error">
-                    Please write a valid email
+                    Por favor escribe un correo válido
                   </p>
                 )}
               </div>
@@ -70,13 +69,13 @@ const LoginPage = () => {
                 <input
                   className="form__input"
                   type="password"
-                  placeholder="Password"
+                  placeholder="Contraseña"
                   name="password"
                   ref={register({ required: true })}
                 />
                 {errors.password && errors.password.type === "required" && (
                   <p className="message message--error">
-                    This field is required
+                    Este campo es obligatorio
                   </p>
                 )}
               </div>
@@ -94,14 +93,14 @@ const LoginPage = () => {
                       ref={register({ required: false })}
                     />
                     <span className="checkbox__check" />
-                    <p>Keep me signed in</p>
+                    <p>Mantener sesión iniciada</p>
                   </label>
                 </div>
                 <Link
                   href="/forgot-password"
                   className="form__info__forgot-password"
                 >
-                  Forgot password?
+                  ¿Olvidaste tu contraseña?
                 </Link>
               </div>
 
@@ -119,11 +118,11 @@ const LoginPage = () => {
                 type="submit"
                 className="btn btn--rounded btn--yellow btn-submit"
               >
-                Sign in
+                Ingresar
               </button>
 
               <p className="form__signup-link">
-                Not a member yet? <Link href="/register">Sign up</Link>
+                ¿Aún no tienes cuenta? <Link href="/register">Regístrate</Link>
               </p>
             </form>
           </div>
