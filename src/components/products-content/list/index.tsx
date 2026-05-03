@@ -10,11 +10,9 @@ const ProductsContent = () => {
   const router = useRouter();
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
   
-  const queryPath = router.asPath.includes("?") 
-    ? router.asPath.substring(router.asPath.indexOf("?")) 
-    : "";
-    
-  const { data, error } = useSwr(`/api/products${queryPath}`, fetcher);
+  // Construimos la query dinámicamente desde el router para que SWR detecte el cambio al instante
+  const query = new URLSearchParams(router.query as any).toString();
+  const { data, error } = useSwr(`/api/products${query ? `?${query}` : ""}`, fetcher);
 
   if (error) return <div>Error al cargar los productos</div>;
   return (

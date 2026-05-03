@@ -16,8 +16,7 @@ const ProductsFilter = () => {
   const router = useRouter();
   const [filtersOpen, setFiltersOpen] = useState(false);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const updateFilters = (e: React.FormEvent<HTMLFormElement>) => {
     const formData = new FormData(e.currentTarget);
     const params = new URLSearchParams();
     
@@ -34,7 +33,7 @@ const ProductsFilter = () => {
   };
 
   return (
-    <form className="products-filter" onSubmit={onSubmit}>
+    <form className="products-filter" onChange={updateFilters} onSubmit={(e) => e.preventDefault()}>
       <button
         type="button"
         onClick={() => setFiltersOpen(!filtersOpen)}
