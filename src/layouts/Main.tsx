@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import Header from "@/components/header";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 type LayoutType = {
   title?: string;
@@ -21,6 +22,7 @@ const MainLayout = ({ children, title = "Next.js Ecommerce" }: LayoutType) => {
       <Header />
 
       <main className={pathname !== "/" ? "main-page" : ""}>{children}</main>
+      <WhatsAppButton />
     </div>
   );
 };
