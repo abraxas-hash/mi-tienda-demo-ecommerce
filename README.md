@@ -1,44 +1,54 @@
-# Comming soon
+# 🚀 E-Commerce Moderno & Escalable (Proyecto Demo)
 
-I know it's been a while since I updated this repo, but hopefully in the next months I can add more features on the project.
-Thanks everyone who gave a star and forked it 🫶
+Bienvenido a la demostración de **Tienda Virtual Premium**. Este proyecto es una plantilla de e-commerce completamente funcional, moderna y optimizada, diseñada para ser la base tecnológica perfecta para tu negocio.
 
-# Next.js Ecommerce
+Actualmente, el diseño de prueba está ambientado en la marca ficticia *"Inka Moda"*, pero **la plataforma está lista para ser 100% personalizada y adaptada a la identidad visual, colores, productos y necesidades específicas de tu empresa.**
 
-This repo contains a work in progress Ecommerce responsive made with Next.js, Redux, Redux-persist, Hooks, SCSS and BEM. If you like it please give it a star :)
+🔗 **[Ver Demo en Vivo](https://tu-url-de-vercel-aqui)** *(Nota: Reemplazar con el link de Vercel cuando compartas esto)*
 
-## Getting started
+---
 
-It's easy to have it running locally.
-Just do a `yarn install` to install the dependencies.
-Then do a `yarn dev` to run it locally.
+## 🛠️ ¿Qué incluye este desarrollo?
 
-## Backend
+Como desarrollador web, mi trabajo es tomar esta base robusta y transformarla en tu tienda ideal. Las características técnicas que obtendrás incluyen:
 
-The backend of the project it's only mocked data. You can find them in `utils/data`.
-The API is being handled by Next API routes.
+*   **⚡ Velocidad Extrema (Next.js):** Tiempos de carga casi instantáneos que mejoran la experiencia del usuario y benefician el SEO en Google.
+*   **📱 Diseño Responsivo:** Se ve y funciona perfectamente en celulares, tablets y computadoras de escritorio.
+*   **🎨 Personalización Total:**
+    *   Cambio completo de paleta de colores.
+    *   Integración de tu logotipo, banners personalizados e imágenes de tus productos reales.
+    *   Fuentes tipográficas alineadas al branding de tu empresa.
+*   **🛒 Flujo de Compra Completo:**
+    *   Catálogo de productos con filtros por categoría, talla, precio y color.
+    *   Páginas de detalle de producto con carrusel de imágenes y selector de variantes.
+    *   Carrito de compras dinámico (sin recargar la página).
+*   **🔐 Cuentas de Usuario:** Sistema de registro y login para que tus clientes puedan guardar su información e historial de pedidos.
+*   **🌐 Localización:** Interfaz adaptada al mercado hispanohablante (textos en español y configuración de monedas locales como Soles `S/`, Pesos o Dólares).
 
-## Design
+---
 
-[This](https://www.xdguru.com/free-xd-ecommerce-ui-kit-by-iceo/) is the design of the project.
+## 💼 ¿Cómo es el proceso de trabajo?
 
-## Available pages
+Si decides que este es el modelo que quieres para tu negocio, el proceso de adaptación es el siguiente:
 
-- Home page: /
-- Products page: /products
-- Product single page: /product/1
-- Cart page: /cart
-- Login page: /login
-- Register page: /register
-- 404 page: /page-not-found
+1.  **Reunión de Requisitos:** Definimos la estructura de tus categorías, envíos, métodos de pago requeridos y recibo el manual de tu marca (logos, colores).
+2.  **Personalización (Customización):** Yo me encargo de programar y modificar el código de esta plantilla para que deje de ser "Inka Moda" y se convierta en tu marca exclusiva.
+3.  **Integraciones:** Conectamos pasarelas de pago reales (Stripe, PayPal, MercadoPago, Culqi, etc.) según lo que necesites.
+4.  **Despliegue y Pruebas:** Subo tu tienda a un servidor de alta velocidad y verificamos que el flujo de compra funciona perfectamente.
 
-## Screenshots
+---
 
-![Next Ecommerce screenshot](https://lucaspulliese.com/wp-content/uploads/2020/09/ecommerce-1.jpg)
+## 💻 Stack Tecnológico (Para perfil técnico)
 
-![Next Ecommerce screenshot](https://lucaspulliese.com/wp-content/uploads/2020/09/ecommerce-2.jpg)
+Este proyecto no está hecho con un CMS tradicional (como WordPress o Shopify), sino con tecnologías modernas que garantizan escalabilidad a nivel corporativo:
 
-## New features added - Nov 2024
+*   **Framework:** React / Next.js
+*   **Estilos:** Sass / CSS Modules
+*   **Gestión de Estado:** Redux Toolkit / SWR
+*   **Validación de Formularios:** React Hook Form
+*   **Despliegue:** Vercel
 
-- Updated Next version.
-- Added eslint config.
+---
+
+### ¿Interesado en tener tu propia tienda virtual?
+Si eres un cliente interesado en adquirir una versión personalizada de esta tienda para tu negocio, ponte en contacto conmigo para solicitar una cotización detallada.
