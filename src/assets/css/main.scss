@@ -333,6 +333,33 @@
   }
 }
 
+/* Aceternity UI Background Gradient Animation */
+@keyframes background-gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-gradient-custom {
+  background: radial-gradient(circle farthest-side at 0 100%, #00ccb1, transparent),
+              radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent),
+              radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
+              radial-gradient(circle farthest-side at 0 0, #1ca0fb, #141316);
+  background-size: 400% 400%;
+  animation: background-gradient-animation 5s ease infinite;
+}
+
+.bg-gradient-custom-blur {
+  @extend .bg-gradient-custom;
+  filter: blur(24px);
+  opacity: 0.6;
+}
+
+.group:hover .bg-gradient-custom-blur {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
 html,body{overflow-x:hidden !important}
 
 // imports styles
