@@ -43,6 +43,40 @@
   .site-header--fixed {
     background-color: rgba(18, 18, 18, 0.9) !important;
   }
+
+  /* Header icons: white in dark mode */
+  .site-header__actions .icon-search,
+  .site-header__actions .icon-cart,
+  .site-header__actions .icon-avatar,
+  .site-header__actions i,
+  .btn-cart i,
+  .site-header__btn-avatar i,
+  .search-form-wrapper i {
+    color: #ffffff !important;
+  }
+
+  /* Cart count badge */
+  .btn-cart__count {
+    background-color: var(--color-orange, #f7931e) !important;
+    color: #fff !important;
+  }
+
+  /* Hamburger menu lines */
+  .btn-hamburger span,
+  .btn-hamburger span::before,
+  .btn-hamburger span::after {
+    background-color: #ffffff !important;
+  }
+
+  /* Logo text */
+  .site-logo {
+    color: #ffffff !important;
+  }
+
+  /* Header nav links */
+  .site-nav a, .site-nav button p {
+    color: #ffffff !important;
+  }
 }
 
 /* Theme Toggle Component Styles */
