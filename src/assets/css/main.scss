@@ -300,6 +300,33 @@
   box-shadow: none !important;
 }
 
+/* Uniform height for all carousel slides */
+.products-carousel .swiper-wrapper {
+  align-items: stretch !important;
+}
+
+.products-carousel .swiper-slide {
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.products-carousel .swiper-slide > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Clamp product name to max 2 lines so cards stay same height */
+.product-item-gradient h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.8em;
+  line-height: 1.4;
+}
+
 
 /* Aceternity UI Background Gradient Animation - VERSION 3.0 */
 @keyframes gradient-glow {

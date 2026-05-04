@@ -21,7 +21,7 @@ export const BackgroundGradient = ({
         height: "100%",
       }}
     >
-      {/* Glow layer - stays INSIDE the wrapper, NOT behind the page */}
+      {/* Glow layer - warm orange/gold palette matching brand */}
       <div
         style={{
           position: "absolute",
@@ -29,11 +29,11 @@ export const BackgroundGradient = ({
           borderRadius: "26px",
           zIndex: 0,
           filter: "blur(20px)",
-          opacity: 0.85,
+          opacity: 0.9,
           background:
-            "radial-gradient(circle farthest-side at 0 100%, #00ccb1, transparent), radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent), radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent), radial-gradient(circle farthest-side at 0 0, #1ca0fb, #141316)",
+            "radial-gradient(circle farthest-side at 0 100%, #ff6b35, transparent), radial-gradient(circle farthest-side at 100% 0, #f7931e, transparent), radial-gradient(circle farthest-side at 100% 100%, #ffcd3c, transparent), radial-gradient(circle farthest-side at 0 0, #e8471e, #1a0a00)",
           backgroundSize: "400% 400%",
-          animation: "gradient-glow 4s linear infinite",
+          animation: "gradient-glow 5s ease infinite",
         }}
       />
       {/* Sharp border layer */}
@@ -44,9 +44,9 @@ export const BackgroundGradient = ({
           borderRadius: "22px",
           zIndex: 1,
           background:
-            "radial-gradient(circle farthest-side at 0 100%, #00ccb1, transparent), radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent), radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent), radial-gradient(circle farthest-side at 0 0, #1ca0fb, #141316)",
+            "radial-gradient(circle farthest-side at 0 100%, #ff6b35, transparent), radial-gradient(circle farthest-side at 100% 0, #f7931e, transparent), radial-gradient(circle farthest-side at 100% 100%, #ffcd3c, transparent), radial-gradient(circle farthest-side at 0 0, #e8471e, #1a0a00)",
           backgroundSize: "400% 400%",
-          animation: "gradient-glow 4s linear infinite",
+          animation: "gradient-glow 5s ease infinite",
         }}
       />
       {/* Content on top */}
