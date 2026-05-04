@@ -7,6 +7,7 @@ import useOnClickOutside from "use-onclickoutside";
 import type { RootState } from "@/store";
 
 import Logo from "../../assets/icons/logo";
+import ThemeToggle from "../theme-toggle";
 
 type HeaderType = {
   isErrorPage?: boolean;
@@ -79,6 +80,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
         </nav>
 
         <div className="site-header__actions">
+          <ThemeToggle />
           <button
             ref={searchRef}
             className={`search-form-wrapper ${searchOpen ? "search-form--active" : ""}`}
