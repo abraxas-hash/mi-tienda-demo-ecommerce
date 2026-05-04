@@ -333,7 +333,7 @@
   }
 }
 
-/* Aceternity UI Background Gradient Animation */
+/* Aceternity UI Background Gradient Animation - FORCED VISIBILITY */
 @keyframes background-gradient-animation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -346,18 +346,36 @@
               radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
               radial-gradient(circle farthest-side at 0 0, #1ca0fb, #141316);
   background-size: 400% 400%;
-  animation: background-gradient-animation 5s ease infinite;
+  animation: background-gradient-animation 3s linear infinite; /* Más rápido para que se note */
 }
 
 .bg-gradient-custom-blur {
   @extend .bg-gradient-custom;
-  filter: blur(24px);
-  opacity: 0.6;
+  filter: blur(20px);
+  opacity: 0.8;
+  top: -8px !important;
+  left: -8px !important;
+  right: -8px !important;
+  bottom: -8px !important;
+  z-index: -1 !important;
 }
 
-.group:hover .bg-gradient-custom-blur {
-  opacity: 1;
-  transition: opacity 500ms;
+.product-item-wrapper {
+  margin: 40px 25px !important; /* Más espacio para el aura */
+  position: relative;
+  z-index: 10;
+}
+
+.product-item-gradient {
+  z-index: 20;
+  position: relative;
+  background: white;
+  border-radius: 22px;
+  height: 100%;
+}
+
+.dark-mode .product-item-gradient {
+  background: #18181b;
 }
 
 html,body{overflow-x:hidden !important}
