@@ -48,11 +48,11 @@ const ProductItem = ({
           </div>
           
           <div className="product__description">
-            <h3 className="text-black dark:text-neutral-200 line-clamp-2">{name}</h3>
+            <h3 className="text-black dark-text-neutral-200 line-clamp-2">{name}</h3>
             
             <div className="mt-auto">
               <div className="flex items-center justify-between">
-                <h4 className="text-xl font-bold text-black dark:text-white">S/{currentPrice}</h4>
+                <h4 className="text-xl font-bold text-black dark-text-white">S/{currentPrice}</h4>
                 {discount && <span className="text-sm line-through text-neutral-500">S/{price}</span>}
               </div>
               

@@ -17,10 +17,10 @@ export const BackgroundGradient = ({
   containerClassName?: string;
 }) => {
   return (
-    <div className={cn("relative p-[2px] group", containerClassName)}>
+    <div className={cn("relative p-4px group", containerClassName)}>
       <div
         className={cn(
-          "absolute inset-0 rounded-[22px] z-0 bg-gradient-custom-blur"
+          "absolute inset-0 rounded-22px z-0 bg-gradient-custom-blur"
         )}
       />
       <div className={cn("relative z-10", className)}>{children}</div>
