@@ -74,26 +74,12 @@ const ShoppingCart = ({
         </div>
       </td>
       <td className="cart-item-before" data-label="Color">
-        <span style={{ 
-          backgroundColor: "#f5f5f5", 
-          padding: "6px 12px", 
-          borderRadius: "20px", 
-          fontSize: "13px",
-          color: "#555",
-          fontWeight: "500"
-        }}>
+        <span className="cart-badge">
           {color || "Estándar"}
         </span>
       </td>
       <td className="cart-item-before" data-label="Talla">
-        <span style={{ 
-          backgroundColor: "#f5f5f5", 
-          padding: "6px 12px", 
-          borderRadius: "20px", 
-          fontSize: "13px",
-          color: "#555",
-          fontWeight: "500"
-        }}>
+        <span className="cart-badge">
           {size || "Única"}
         </span>
       </td>
