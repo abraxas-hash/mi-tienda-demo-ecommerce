@@ -30,7 +30,7 @@ const ProductItem = ({
 
   return (
     <div className="product-item-wrapper">
-      <BackgroundGradient className="rounded-[22px] p-4 bg-white dark:bg-zinc-900 h-full flex flex-col">
+      <BackgroundGradient className="h-full">
         <div className="product-item-gradient">
           <div className="product__image">
             <button
@@ -42,27 +42,26 @@ const ProductItem = ({
             </button>
 
             <Link href={`/product/${id}`}>
-              <img src={images ? images[0] : ""} alt="product" className="object-contain rounded-xl" />
+              <img src={images ? images[0] : ""} alt="product" />
               {discount && <span className="product__discount">{discount}%</span>}
             </Link>
           </div>
           
-          <div className="product__description mt-4 flex flex-col flex-grow">
-            <h3 className="text-base sm:text-lg font-bold text-black dark:text-neutral-200 line-clamp-2" style={{minHeight: '3em'}}>{name}</h3>
-            <div
-              className={`product__price ${discount ? "product__price--discount" : ""} mt-auto flex items-center justify-between pt-4`}
-            >
-              <div>
+          <div className="product__description">
+            <h3 className="text-black dark:text-neutral-200 line-clamp-2">{name}</h3>
+            
+            <div className="mt-auto">
+              <div className="flex items-center justify-between">
                 <h4 className="text-xl font-bold text-black dark:text-white">S/{currentPrice}</h4>
                 {discount && <span className="text-sm line-through text-neutral-500">S/{price}</span>}
               </div>
+              
+              <Link href={`/product/${id}`}>
+                <button className="rounded-full w-full py-2 mt-4 text-xs font-bold transition">
+                  Ver Detalles
+                </button>
+              </Link>
             </div>
-            
-            <Link href={`/product/${id}`}>
-              <button className="rounded-full w-full py-2 text-white bg-black mt-4 text-xs font-bold dark:bg-zinc-800 transition hover:opacity-80">
-                Ver Detalles
-              </button>
-            </Link>
           </div>
         </div>
       </BackgroundGradient>
