@@ -293,23 +293,16 @@
   z-index: 20;
 }
 
-/* Reset original styles that interfere */
+/* Grid for products - plain CSS, no SASS mixins here */
 .products-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  gap: 0 !important;
+  padding: 10px 0;
 }
 
 .products-list > div {
-  width: calc(33.333% - 40px) !important;
-  @include breakpoint(tablet) {
-    width: calc(50% - 40px) !important;
-  }
-  @include breakpoint(phone) {
-    width: 100% !important;
-    margin: 30px 0;
-  }
+  width: 100% !important;
 }
 
 .product-item {
@@ -318,23 +311,9 @@
   box-shadow: none !important;
 }
 
-.product__image {
-  height: 300px !important;
-  background-color: transparent !important;
-  margin-bottom: 0 !important;
-  position: relative !important;
-  overflow: hidden;
-  border-radius: 15px;
-  
-  img {
-    position: relative !important;
-    object-fit: contain !important;
-    height: 100% !important;
-  }
-}
 
-/* Aceternity UI Background Gradient Animation - VERSION 2.0 */
-@keyframes background-gradient-animation {
+/* Aceternity UI Background Gradient Animation - VERSION 3.0 */
+@keyframes gradient-glow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
