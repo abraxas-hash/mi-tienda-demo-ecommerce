@@ -18,7 +18,9 @@
   ],
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
+    "clsx": "^2.1.1",
     "eslint-config-next": "^15.0.3",
+    "framer-motion": "^12.38.0",
     "lodash": "^4.17.21",
     "next": "15.0.7",
     "next-redux-wrapper": "^6.0.2",
@@ -37,6 +39,7 @@
     "sass": "^1.26.10",
     "swiper": "^6.5.1",
     "swr": "^0.3.2",
+    "tailwind-merge": "^3.5.0",
     "use-onclickoutside": "^0.3.1"
   },
   "devDependencies": {
