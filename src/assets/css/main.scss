@@ -293,18 +293,7 @@
   z-index: 20;
 }
 
-/* Grid for products - plain CSS, no SASS mixins here */
-.products-list {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
-  gap: 0 !important;
-  padding: 10px 0;
-}
-
-.products-list > div {
-  width: 100% !important;
-}
-
+/* Product item: reset to allow BackgroundGradient to control layout */
 .product-item {
   background: transparent !important;
   border: none !important;
@@ -410,13 +399,6 @@
   }
 }
 
-/* Responsive Grid Fix */
-.products-list {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
-  gap: 30px !important;
-  padding: 20px 0;
-}
 
 html,body{overflow-x:hidden !important}
 
