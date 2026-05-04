@@ -47,13 +47,15 @@ const ProductItem = ({
             </Link>
           </div>
           
-          <div className="product__description mt-4">
-            <h3 className="text-base sm:text-lg font-bold text-black dark:text-neutral-200">{name}</h3>
+          <div className="product__description mt-4 flex flex-col flex-grow">
+            <h3 className="text-base sm:text-lg font-bold text-black dark:text-neutral-200 line-clamp-2" style={{minHeight: '3em'}}>{name}</h3>
             <div
-              className={`product__price ${discount ? "product__price--discount" : ""} mt-2 flex items-center justify-between`}
+              className={`product__price ${discount ? "product__price--discount" : ""} mt-auto flex items-center justify-between pt-4`}
             >
-              <h4 className="text-xl font-bold text-black dark:text-white">S/{currentPrice}</h4>
-              {discount && <span className="text-sm line-through text-neutral-500">S/{price}</span>}
+              <div>
+                <h4 className="text-xl font-bold text-black dark:text-white">S/{currentPrice}</h4>
+                {discount && <span className="text-sm line-through text-neutral-500">S/{price}</span>}
+              </div>
             </div>
             
             <Link href={`/product/${id}`}>

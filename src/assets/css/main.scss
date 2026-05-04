@@ -238,6 +238,7 @@
 .absolute { position: absolute; }
 .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
 .z-10 { z-index: 10; }
+.z-0 { z-index: 0; }
 .z-\[1\] { z-index: 1; }
 .p-\[4px\] { padding: 4px; }
 .rounded-3xl { border-radius: 1.5rem; }
@@ -250,6 +251,7 @@
 .group:hover .group-hover\:opacity-100 { opacity: 1; }
 .mt-2 { margin-top: 0.5rem; }
 .mt-4 { margin-top: 1rem; }
+.mt-auto { margin-top: auto; }
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
 .items-center { align-items: center; }
@@ -273,6 +275,63 @@
 .line-through { text-decoration: line-through; }
 .text-neutral-500 { color: #737373; }
 .object-contain { object-fit: contain; }
+
+/* Product Item Wrapper Fixes */
+.product-item-wrapper {
+  margin: 30px 15px; /* Damos espacio para que el brillo se vea */
+  height: auto;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item-gradient {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  z-index: 20;
+}
+
+/* Reset original styles that interfere */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.products-list > div {
+  width: calc(33.333% - 40px) !important;
+  @include breakpoint(tablet) {
+    width: calc(50% - 40px) !important;
+  }
+  @include breakpoint(phone) {
+    width: 100% !important;
+    margin: 30px 0;
+  }
+}
+
+.product-item {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.product__image {
+  height: 300px !important;
+  background-color: transparent !important;
+  margin-bottom: 0 !important;
+  position: relative !important;
+  overflow: hidden;
+  border-radius: 15px;
+  
+  img {
+    position: relative !important;
+    object-fit: contain !important;
+    height: 100% !important;
+  }
+}
 
 html,body{overflow-x:hidden !important}
 
