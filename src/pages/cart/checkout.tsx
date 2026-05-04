@@ -170,7 +170,7 @@ const CheckoutPage = () => {
 
                 <div className="checkout-total">
                   <p>Costo Total</p>
-                  <h3>S/{Number(priceTotal).toFixed(2)}</h3>
+                  <h3 style={{ color: "inherit" }}>S/{Number(priceTotal).toFixed(2)}</h3>
                 </div>
               </div>
             </div>
